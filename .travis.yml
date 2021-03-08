@@ -1,6 +1,12 @@
 language: node_js
 node_js:
-  - 15
+- 15
 cache:
   directories:
-    - node_modules
+  - node_modules
+deploy:
+  provider: heroku
+  app: cicd-example-fed22
+  on: main
+  api_key:
+    secure: VsM2/2EdWYwImGGTMo2YC10Ujp7Yisqw9LKNC9Thf7DQ5mybH68pY71H35jDqFwQbMFYMtRitkxehOCa3NfgyC1TJ7749FvUNl4uVfsZkY0eyEfIK7ibtp0e4MOOPtEL/9GDkdVJG17Ba+2zwqtL1H5n/nAbfHbw3KxaGpsodA7Sgdy/F2WmEdMGmRAFpM8+HPE9km/4uE52wJ+80ONGMShxzKBsRZJ3yyRfmgaOEIRhSTFCt4fUsEDlvayBBzX7XI4YPQZ+JlCc3GepZBS+/yUIZsyG4G5If7IWK4x7r5kkPl3SKSOGws2/6xif5pJaXn8leBJ3qHMWVHi3zKrKU/c+q5ppyk92tlz380MbrGDe4iRCpn4tKNbAojMoSEWiSHiND64bSHYSKkYjqPkZJzaMPyyQbCM/OnmypBz/aMEsUJ6eFPuYooWoYZqv/IZL2y715SvJgB7Xh1vywqZZpjN5slPZlRZ+Fgqg1QjURLH/d1eUgoMI9tMptCOfLrbr3f0EV1MyDPsq5TMQwcZx5vEs1DF0R/CT2N0aDeHcWkhmWuyoy0U1HiNjVVgcS0riFZQok88CC9NeIt/s/YRMer4wfKRAtrP7LEwYuxPDv4sgE6gn2+i6r9am463qfTAqe9NDY3dMdZ0k77xogQAxDfQl+gPBOlaB/Q5gED5uOeA=
