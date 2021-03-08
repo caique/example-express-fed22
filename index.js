@@ -7,6 +7,10 @@ app.get('/uuid', (req, res) => {
     res.send(uuidV4());
 })
 
+app.get('/', (req, res) => {
+    res.send("Made by Caique Peixoto for FED22");
+})
+
 app.listen(PORT, () => {
     console.log(`UUID generator is listening at port: ${PORT}`)
 })
